@@ -27,7 +27,7 @@ $magnolia: #F2F2FDff;
         // border: 1px blue solid;
 
         .flex-item {
-            height: 250px;
+            height: 350px;
             width: 250px;
             background: #f4f4f4;
             text-align: center;
@@ -36,22 +36,31 @@ $magnolia: #F2F2FDff;
 
         .left-box {
             background: #4A24CCff;
+            transform: translateX(40px);
         }
 
         .right-box {
             background: #fff;
-            
         }
       }
   }
 
   // responsive
 @media only screen and (max-width: 768px) {
-    .flex-container {
-        flex-direction: column;
+    body {
+        .flex-container {
+            display: flex;
+            flex-direction: column;
 
-        .flex-item {
-            width: 250px;
+            .flex-item {
+                width: 100vw;
+                height: 100vh;
+            }
+
+            .left-box {
+                transform: translateX(0);
+                transform: translateY(20px);
+            }
         }
     }
 }
