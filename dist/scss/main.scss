@@ -45,15 +45,26 @@ $magnolia: #F2F2FDff;
             .circle {
                 font-size: 50px;
                 padding: 40px;
-                width: 60%;
+                width: 170px;
                 background: linear-gradient(to bottom, #000099 0%, #6666ff 100%);
                 border-radius: 100%;
                 display: inline-block;
+
+                .tiny {
+                    font-size: 15px;
+                    display: block;
+                    color:lightgray;
+                }
             }
 
-            .tiny {
-                font-size: 15px;
-                display: block;
+            h2 {
+                padding:10px;
+                margin-top: 15px;
+            }
+
+            p {
+                color: lightgray;
+                padding: 15px;
             }
         }
 
@@ -67,7 +78,7 @@ $magnolia: #F2F2FDff;
                 background: red;
                 width:100%;
                 border-radius: 10px;
-                margin: 10px 0;
+                margin: 15px 0;
 
                 img {
                     position: relative;
@@ -95,15 +106,13 @@ $magnolia: #F2F2FDff;
             }
 
             .num {
-                display: flex;
-                align-self: flex-end;
                 color: #333;
+                margin-left: auto;
             }
 
             span {
                 color: gray;
             }
-            
 
             .btn {
                 text-align: center;
@@ -112,6 +121,7 @@ $magnolia: #F2F2FDff;
                 background-color: #333;
                 color: #fff;
                 border-radius: 30px;
+                margin-top: 35px;
             }
         }
       }
@@ -123,15 +133,25 @@ $magnolia: #F2F2FDff;
         .flex-container {
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: scroll;
 
             .flex-item {
-                width: 100vw;
-                height: 100vh;
+                width: 100%;
+                // height: auto;
             }
 
             .left-box {
-                // transform: translateX(0);
-                // transform: translateY(20px);
+
+                .circle {
+                    display: inline-block;
+                    width: 170px;
+                }
+            }
+
+            .right-box {
+
             }
         }
     }
