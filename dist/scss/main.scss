@@ -5,6 +5,7 @@ $snow: #FFF6F5ff;
 $floral-white: #FFFBF2ff;
 $mint-cream: #F3FAFAff;
 $magnolia: #F2F2FDff;
+$electric-indigo: #573AF8ff;
 
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
@@ -16,8 +17,8 @@ $magnolia: #F2F2FDff;
 
   body {
     font-family: 'Hanken Grotesk', sans-serif;
-    // background: #FAFAFA;
-    background: #444;
+    background: #FAFAFA;
+
 
     .flex-container {
         display: flex;
@@ -36,8 +37,8 @@ $magnolia: #F2F2FDff;
           }
 
         .left-box {
-            background: #4A24CCff;
-            // transform: translateX(40px);
+            background: $electric-indigo;
+            transform: translateX(10px);
             color:#fff;
             padding: 40px;
             text-align: center;
@@ -46,7 +47,7 @@ $magnolia: #F2F2FDff;
                 font-size: 50px;
                 padding: 40px;
                 width: 170px;
-                background: linear-gradient(to bottom, #000099 0%, #6666ff 100%);
+                background: linear-gradient(to bottom, #000099 0%, #573AF8ff 100%);
                 border-radius: 100%;
                 display: inline-block;
 
@@ -143,6 +144,7 @@ $magnolia: #F2F2FDff;
             }
 
             .left-box {
+                transform: none;
 
                 .circle {
                     display: inline-block;
